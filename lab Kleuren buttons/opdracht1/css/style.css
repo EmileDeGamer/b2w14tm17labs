@@ -1,0 +1,14 @@
+body {
+  margin: 0;
+}
+
+div {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (auto)[5];
+      grid-template-columns: repeat(5, auto);
+  -ms-grid-rows: (auto)[6];
+      grid-template-rows: repeat(6, auto);
+  background: gray;
+}
+/*# sourceMappingURL=style.css.map */
