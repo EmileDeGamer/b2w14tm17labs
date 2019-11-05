@@ -39,10 +39,10 @@ for (let i = 0; i < amount; i++) {
 }
 
 function checkButton(button){
-        amountsClicked[button.innerHTML - 1]++
-        button.style.background = colors[amountsClicked[button.innerHTML-1]]
-        if (amountsClicked[button.innerHTML-1] > colors.length - 1){
-            div.removeChild(button)
-        }
+    amountsClicked[button.innerHTML - 1]++
+    button.style.background = colors[amountsClicked[button.innerHTML-1]]
+    if (amountsClicked[button.innerHTML-1] > colors.length - 1){
+        div.removeChild(button)
     }
+}
 
