@@ -1,5 +1,6 @@
 let div = document.getElementById('container')
-let amount = 0
+
+let buttonAmount = 30
 
 let amountColor = prompt('Hoeveel kleuren wilt u hebben?', 'hoeveelheid:')
 let colors = ["green"]
@@ -16,12 +17,11 @@ div.style.width = "75%"
 div.style.padding = "10px"
 div.style.margin = "auto"
 
-for (let i = 0; i < 30; i++) {
+for (let i = 0; i < buttonAmount; i++) {
     createButton()
 }
 
 function createButton(){
-    amount++
     let button = document.createElement('button')
     button.style.background = "green"
     button.onclick = function(){checkButton(button)}
@@ -34,7 +34,7 @@ function createButton(){
     div.appendChild(button)
 }
 
-for (let i = 0; i < amount; i++) {
+for (let i = 0; i < buttonAmount; i++) {
     amountsClicked.push(0)
 }
 
@@ -45,4 +45,3 @@ function checkButton(button){
         div.removeChild(button)
     }
 }
-
